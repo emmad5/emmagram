@@ -1,13 +1,13 @@
 import * as ApitUtil from '../util/session_api_utl';
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const RECEIVE_SESSION_ERRORS = "RECEIVE_SESSION_ERRORS";
 export const LOGOUT_USER = "LOGOUT_USER";
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
 export const login = user => dispatch => (
     ApitUtil.login(user)
         .then(user => dispatch(receiveCurrentUser(user))),
-        errors => dispatch(receiveErrors(errors))
+        errors => dispatch(receiveSessionErrors(errors))
 );
 
 export const logout = () => dispatch => (
@@ -18,7 +18,7 @@ export const logout = () => dispatch => (
 export const signup = user => dispatch => (
     ApitUtil.signup(user)
         .then(user => dispatch(receiveCurrentUser(user))),
-        errors => dispatch(receiveErrors(errors))
+        errors => dispatch(receiveSessionErrors(errors))
 );
 
 export const receiveCurrentUser = user => ({
@@ -28,8 +28,8 @@ export const receiveCurrentUser = user => ({
 export const logoutCurrentUser = () => ({
     type: LOGOUT_USER
 });
-export const receiveErrors = errors => ({
-    type: RECEIVE_ERRORS,
+export const receiveSessionErrors = errors => ({
+    type: RECEIVE_SESSION_ERRORS,
     errors
 });
 
