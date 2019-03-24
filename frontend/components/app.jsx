@@ -1,7 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
-import LoginFormContainer from './session_form/login_form_container';
-import SignupFormContainer from './session_form/signup_form_container';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import ProfileContainer from './profile/profile_container';
 import Modal from './modal';
 import {
     Route,
@@ -17,8 +17,10 @@ const App = () => (
         <div className='greeting'>
             <GreetingContainer />  
         </div>
-        {/* <Route path='/login' component={LoginFormContainer} /> */}
-        {/* <Route path='/signup' component={SignupFormContainer} /> */}
+        <Switch>
+            <ProtectedRoute exact path="/profile" component={ProfileContainer} />
+        </Switch>
+ 
     </div>
 )
 

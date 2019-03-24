@@ -13,10 +13,20 @@
  *= require_tree .
  *= require_self
  */
-
+ @keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+body {
+  background-color: #2C3055;
+}
  .main {
     background-image: url('bg3.jpg');
-    height:130vh;
+    height:400vh;
  }
 
  .modal-background {
@@ -27,6 +37,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 10;
+  animation:fadein .2s;
 }
 
 .modal-child {
@@ -34,8 +45,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(146, 163, 219);
+  background: rgb(180, 197, 255);
   height: 300px;
   width: 400px;
   border-radius: 15px;
+  transition: all 0.4s ease;
 }
+
