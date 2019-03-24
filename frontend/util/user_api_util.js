@@ -6,9 +6,11 @@ export const update = (user) => (
     })
 );
 
-export const fetchUser = id  => (
-    $.ajax({
+export const fetchUser = id  => {
+    console.log(id)
+   return $.ajax({
         method: 'GET',
-        url: `api/users/${id}`
-    })
-);
+        url: `/api/users/${id}`
+    });
+};
+

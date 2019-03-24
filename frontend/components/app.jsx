@@ -3,6 +3,7 @@ import GreetingContainer from './greeting/greeting_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import ProfileContainer from './profile/profile_container';
 import EditProfileContainer from './profile/edit_profile_container';
+import UserPageContainer from './profile/user_page_container';
 import Modal from './modal';
 import {
     Route,
@@ -20,6 +21,7 @@ const App = () => (
         </div>
         <Switch>
             <ProtectedRoute path='/profile/edit' component={EditProfileContainer} />
+            <ProtectedRoute path='/users/:id' component={UserPageContainer} />
             <ProtectedRoute exact path="/profile" component={ProfileContainer} />
         </Switch>
  
