@@ -18,7 +18,9 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user)
+        this.props.closeModal();
+        this.props.processForm(user);
+        
     }
 
     renderErrors() {
@@ -39,7 +41,7 @@ class SessionForm extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <h2>Welcome to EmmaGram</h2>
-                    Please {this.props.formType} or {this.props.navLink}
+                    Please {this.props.formType} or {this.props.otherForm}
                     {this.renderErrors()}
                     <div>
                     <label>

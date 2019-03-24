@@ -8,10 +8,10 @@ class Greeting extends React.Component {
     renderLinks() {
         return (
         <nav>
-            <Link to='/login'>Login</Link>
+            <button onClick={() => this.props.openModal('login')}>Login</button>
             &nbsp;
             &nbsp;
-            <Link to='/signup'>Signup</Link>            
+            <button onClick={() => this.props.openModal('signup')}>Sign Up</button>                      
         </nav>
         )
     }
