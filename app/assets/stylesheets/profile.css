@@ -2,6 +2,7 @@
     height: 100%;
     width: 1000px;
     background-color: whitesmoke;
+    opacity: .7;
     border-radius: 3px;
     position: absolute;
     left: 15%;
@@ -13,6 +14,19 @@
 
 .profile-pic {
     border: 1px black solid;
+        background-image: url('prof.png');
+        background-size: 100% 100%;
     height: 200px;
     width: 200px;
+    z-index: 10;
+    opacity: 1;
+ 
+}
+.username-heading {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.edit-profile-button {
+    padding: 20px;
 }

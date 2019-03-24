@@ -20,7 +20,7 @@ class Greeting extends React.Component {
     renderGreeting() {
         return(
         <div className='homepage'>
-                <h2 className='greeting-tagline'>Hi {this.props.currentUser.username}</h2>
+                <h2 className='greeting-tagline'>EmmaLens</h2>
                 <div className='greeting-buttons'>
                 <Link className='session-button' to='/'>Home</Link>
                 <Link  className='session-button' to='/profile'>Profile</Link>
