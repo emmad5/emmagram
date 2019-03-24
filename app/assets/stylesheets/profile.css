@@ -30,3 +30,50 @@
 .edit-profile-button {
     padding: 20px;
 }
+.bio-edit {
+    text-align: left;
+    width: 100px;
+    font-weight: bold; 
+}
+
+.textarea-input {
+     border: 1px grey solid;
+    background: rgba(245, 245, 245, 0.87);
+    text-align: left;
+    padding: 2px;
+    height: 150px;
+    width: 250px;
+}
+.label-flex {
+    display: flex;
+}
+.edit-submit {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    width: 150px;
+    text-align: center;
+    background: rgba(233, 146, 161, 0.726);
+    margin-left: 100px;
+}
+
+.edit-submit:hover {
+    background: rgb(230, 116, 135);
+}
+.bio {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.edit-button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    width: 130px;
+    text-align: center;
+    background: rgba(233, 146, 161, 0.452); 
+}
+
+.edit-button:hover {
+   background: rgba(233, 146, 161, 0.726);
+}

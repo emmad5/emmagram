@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import EditProfile from './edit_profile';
+import {update} from '../../actions/user_actions'
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -14,6 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return ({
+        update: (user) => dispatch(update(user))
     })
 };
 

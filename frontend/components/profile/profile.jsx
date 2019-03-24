@@ -14,9 +14,11 @@ class Profile extends React.Component {
                 </div>
                 <div className='profile-bio'> 
                     <h1 className='username-heading'>{this.props.currentUser.username}</h1>
-                {this.props.currentUser.bio}
+                <div className='bio'> {this.props.currentUser.bio}
+                </div>
+                <br/>
                 <a href="#/profile/edit">
-                    <button className="edit-profile-button">Edit Profile</button>
+                    <button className="edit-button">Edit Profile</button>
                 </a>                </div>
                 <div className='profile-heading'> 
                 
