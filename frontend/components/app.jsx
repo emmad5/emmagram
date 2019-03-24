@@ -14,10 +14,9 @@ import {
 const App = () => (
     <div className='main'>
         <Modal />
-        <header>
-            <GreetingContainer />
-            <h1>EmmaGram</h1>   
-        </header>
+        <div className='greeting'>
+            <GreetingContainer />  
+        </div>
         {/* <Route path='/login' component={LoginFormContainer} /> */}
         {/* <Route path='/signup' component={SignupFormContainer} /> */}
     </div>

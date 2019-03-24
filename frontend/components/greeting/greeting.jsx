@@ -8,10 +8,11 @@ class Greeting extends React.Component {
     renderLinks() {
         return (
         <nav>
-            <button onClick={() => this.props.openModal('login')}>Login</button>
+            <h1 className='greeting-header'>Welcome to EmmaLens</h1> <h2 className='greeting-tagline'>The fabric of our lives</h2>
+            <button onClick={() => this.props.openModal('login')} className='session-button'>Login</button>
             &nbsp;
-            &nbsp;
-            <button onClick={() => this.props.openModal('signup')}>Sign Up</button>                      
+                &nbsp;
+            <button onClick={() => this.props.openModal('signup')} className='session-button'>Sign Up</button>                      
         </nav>
         )
     }
@@ -19,8 +20,8 @@ class Greeting extends React.Component {
     renderGreeting() {
         return(
         <div>
-        <h2>Hi {this.props.currentUser.username}</h2>
-        <button onClick={this.props.logout}>Logout</button>
+                <h2 className='greeting-tagline'>Hi {this.props.currentUser.username}</h2>
+                <button onClick={this.props.logout} className='session-button'>Logout</button>
         </div>
         )
     }

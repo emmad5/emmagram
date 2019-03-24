@@ -1,0 +1,38 @@
+.greeting {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.greeting-header {
+    font-size: 50px;
+}
+
+.greeting-tagline {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.session-button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+.session-button:hover {
+    background: rgb(233, 146, 161);
+
+}
+.session-form {
+    text-align: center;
+}
+.session-form-header {
+    padding: 25px 5px 15px 5px;
+    font-size: 25px;
+}
+
+.input {
+    border: 1px grey solid;
+    background: rgba(245, 245, 245, 0.87);
+    text-align: left;
+}
