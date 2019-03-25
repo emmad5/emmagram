@@ -51,13 +51,13 @@ export default class Form extends React.Component {
     render() {
         console.log(this.state);
         return (
-            <div className='profile-main'>
+            <div className='edit-profile-main'>
                 <div className='form-upload' >
             <h2 className='upload-tagline'>Upload Photo</h2>
                     <form className='form-upload' onSubmit={this.handleSubmit}>
                         <div className='img-prev'>
                         <img
-                            
+                            className='image-upload'
                             id='image-preview'
                             src={this.state.imageUrl}
                         />

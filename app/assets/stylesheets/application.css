@@ -26,7 +26,9 @@ body {
 }
  .main {
     background-image: url('bg3.jpg');
-    height:200vh;
+    height:400vh;
+    background-repeat: repeat-y;
+
  }
 
  .modal-background {

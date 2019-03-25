@@ -1,8 +1,7 @@
 .profile-main {
-    height: 300%;
+    height: 350%;
     width: 1000px;
-    background-color: rgb(241, 231, 231, 0.7);
- 
+    background-color: rgb(241, 231, 231, 0.6);
     border-radius: 3px;
     position: absolute;
     left: 15%;
@@ -14,7 +13,7 @@
 .edit-profile-main {
     height: 100%;
     width: 1000px;
-    background-color: rgb(241, 231, 231, 0.7);
+    background-color: rgb(241, 231, 231, 0.6);
     border-radius: 3px;
     position: absolute;
     left: 15%;
@@ -31,8 +30,8 @@
 
 .profile-pic {
     border: 1px black solid;
-        background-image: url('prof.png');
-        background-size: 100% 100%;
+    background-image: url('prof.png');
+    background-size: 100% 100%;
     height: 200px;
     width: 200px;
     z-index: 10;
@@ -114,7 +113,7 @@
 
 .upload-tagline {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin: 20px;
       font-family: 'Dancing Script', cursive;
       text-align: center;
       height: 40px;
@@ -126,12 +125,10 @@
     object-fit: contain;
     border: 1px grey solid;
     border-radius: 2px;
+    position: relative;
     
 }
 
-#image-preview {
-    opacity: 1;
-}
 .caption-input {
     border: 1px grey solid;
     border-radius: 2px;
@@ -148,9 +145,13 @@
 .image {
   position: absolute;
   top: 0;
-  /* width: 90%; */
   height: 100%;
   padding: 10px;
+}
+.image-upload {
+  position: absolute;
+  top: 0;
+  height: 100%;
 }
 
 .image-list {
