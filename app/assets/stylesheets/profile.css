@@ -77,3 +77,12 @@
 .edit-button:hover {
    background: rgba(233, 146, 161, 0.726);
 }
+.flex-profile {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-cloud-upload-alt {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: 35px;
+}

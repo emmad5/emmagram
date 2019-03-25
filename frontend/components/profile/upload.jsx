@@ -33,15 +33,13 @@ export default class Form extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-
         const formData = new FormData();
-
         formData.append('image[caption]', this.state.caption);
         if (this.state.imageFile) {
             formData.append('image[photo]', this.state.imageFile);
         }
         this.props.createImage(formData)
-            .then(() => this.props.fetchUser(this.props.user.id))
+            // .then(() => this.props.fetchUser(this.props.user.id))
             .then(() => this.props.history.push("/profile"))
     }
     update() {
@@ -52,7 +50,6 @@ export default class Form extends React.Component {
 
     render() {
         console.log(this.state);
-        const preview = this.state.photoUrl ? <img src={this.state.imageUrl} /> : null;
         return (
             <div className='profile-main'>
                 <form onSubmit={this.handleSubmit}>
@@ -74,14 +71,11 @@ export default class Form extends React.Component {
                         id="file-selector"
                         onChange={this.handleFile}
                         required
-                    />
-                 
+                    />     
                     <input
-         
                         type="submit"
                         value="Submit"
                     />
-                 
                 </form>
             </div>
         );

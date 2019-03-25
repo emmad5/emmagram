@@ -1,11 +1,5 @@
 .greeting {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    
-
 }
 .greeting-header {
     font-size: 60px;
@@ -15,7 +9,7 @@
 .greeting-tagline {
     font-size: 40px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: 'Dancing Script', cursive;
 
     
