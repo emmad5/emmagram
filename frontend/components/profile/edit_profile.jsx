@@ -40,7 +40,7 @@ class EditProfile extends React.Component {
 
     render() {
         return (
-            <div className='profile-main'>
+            <div className='edit-profile-main'>
                 <div>
                 </div>
                 <div className='profile-bio'>

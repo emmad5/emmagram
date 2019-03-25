@@ -13,17 +13,19 @@ class Profile extends React.Component {
     render() {
         let posts = this.props.images.map(image => {
             return (
-                <li key={`image-${image.id}`}>
+                <li key={`image-${image.id}`} className='image-container'>
                     <img
                         key={`image-${image.id}`}
                         src={image.image_url} 
+                        className='image'
                     />
                 </li>
             )
         })
-        debugger
+        
         return(
-            <div className='profile-main'> 
+            <div className='profile-main'>
+            <div className='profile-flex'> 
                 <div className='profile-pic'> 
                   
                 </div>
@@ -38,14 +40,19 @@ class Profile extends React.Component {
                 <a href="#/profile/edit">
                     <button className="edit-button">Edit Profile</button>
                 </a> 
-                    <ul>
-                        {posts.reverse()}
-                    </ul>               
+                                  
                 </div>
                 <div className='profile-heading'> 
                 
                 </div>
+                <br/>
                 
+                    
+                
+            </div>
+                <ul className='image-list'>
+                {posts.reverse()}
+                </ul> 
             </div>
         )
     }
