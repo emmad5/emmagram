@@ -6,6 +6,9 @@ class Profile extends React.Component {
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        this.props.fetchUser(this.props.currentUser.id);
+    }
 
     render() {
         let posts = this.props.images.map(image => {
@@ -13,11 +16,12 @@ class Profile extends React.Component {
                 <li key={`image-${image.id}`}>
                     <img
                         key={`image-${image.id}`}
-                        src={image.imageUrl} 
+                        src={image.image_url} 
                     />
                 </li>
             )
         })
+        debugger
         return(
             <div className='profile-main'> 
                 <div className='profile-pic'> 
@@ -33,14 +37,15 @@ class Profile extends React.Component {
                 <br/>
                 <a href="#/profile/edit">
                     <button className="edit-button">Edit Profile</button>
-                </a>                
+                </a> 
+                    <ul>
+                        {posts.reverse()}
+                    </ul>               
                 </div>
                 <div className='profile-heading'> 
                 
                 </div>
-                <ul>
-                    {posts}
-                </ul>
+                
             </div>
         )
     }
