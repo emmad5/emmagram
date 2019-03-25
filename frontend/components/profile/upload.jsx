@@ -52,15 +52,18 @@ export default class Form extends React.Component {
         console.log(this.state);
         return (
             <div className='profile-main'>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
+                <div className='form-upload' >
+            <h2 className='upload-tagline'>Upload Photo</h2>
+                    <form className='form-upload' onSubmit={this.handleSubmit}>
+                        <div className='img-prev'>
                         <img
+                            
                             id='image-preview'
                             src={this.state.imageUrl}
                         />
                     </div>
                     <textarea
-                       
+                        className='caption-input'
                         value={this.state.caption}
                         onChange={this.update()}
                         maxLength="300"
@@ -75,8 +78,10 @@ export default class Form extends React.Component {
                     <input
                         type="submit"
                         value="Submit"
+                        className='edit-button'
                     />
                 </form>
+                </div>
             </div>
         );
     }

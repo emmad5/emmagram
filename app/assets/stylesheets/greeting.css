@@ -4,6 +4,7 @@
 .greeting-header {
     font-size: 60px;
     font-family: 'Dancing Script';
+    padding-top: 150px;
 }
 
 .greeting-tagline {
